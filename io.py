@@ -74,7 +74,7 @@ if hodnoceni == 0 or hodnoceni == 1:
 elif hodnoceni == 2:
     print('Jde to {}/e/i/o/u, ale na {} let by to mohlo být lepší.' .format(jmeno, vek))
 else:
-    print('Vyborně {}/e/i/o/u, jelikož máš {} let, tak jsi nezklamal.' .format(jmeno, vek))
+    print('Výborně {}/e/i/o/u, jelikož máš {} let, tak jsi nezklamal.' .format(jmeno, vek))
 print('Vaše hodnocení je: {}/{}' .format(hodnoceni, otazka))
 
 
