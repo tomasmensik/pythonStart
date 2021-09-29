@@ -30,8 +30,20 @@ Některé objekty mohou mít explicitně přiřazené jméno, obecně označovan
 '''Úkol A'''
 #? Najděte na Internetu, jakými funkcemi lze v Pythonu zjistit
 #? a) typ objektu
+#Odpoved je: type()
+
 #? b) identitu objektu (jeho adresu v paměti)
+#Odpoved je: repr()
+
 #? Ukažte to na příkladech proměnných students_count, rating, is_published a vypište výstupy do konzole
+print(type(students_count))
+print(type(rating))
+print(type(is_published))
+
+print("\n" + repr(students_count))
+print(repr(rating))
+print(repr(is_published) + "\n")
+
 
 # Numerické operátory
 # print(10 + 3)
@@ -66,12 +78,23 @@ hexadecimal = 0x12c #Hexadecimal Literal
 
 '''Úkol B'''
 #? Vypište do poznámky všechny bitové operátory, které nabízí Python
+#Odpoved je: &, |, ~, ^, >>, <<
+
 #? Do proměnné myself_binary uložte binární číslo vytvořené na základě osmi prvních znaků z vašeho jména a příjmení (souhláska = 1, samohláska 0)
 #? Příklad - HildaDok: 10110101
+myself_binary = 0b10101101
+
 #? Vypište toto binární číslo v desítkové soustavě
+print(int(myself_binary))
+
 #? Pro toto binární číslo proveďte nejprve bitový posun o 2 bity vpravo, poté vypište výsledek v desítkové soustavě
+print(int(myself_binary>>2))
+
 #? Proveďte bitový součin hexadecimálního čísla "1A" a vašeho binárního čísla a opět vypište v desítkové soustavě
+print((int('1A',base=16)) & (int(myself_binary)))
+
 #? Výsledek zobrazte jako formátovaný řetězec - např. "Binární součin čísla 0b11010 a 0b10110101 je 0b10000"
+print("Binární součin čísla {} a {} je {}".format(bin(int('100', base=16)), bin(myself_binary), bin((int('1A',base=16)) & (int(myself_binary)))))
 
 
 '''Python plně podporuje operace v plovoucí řádové čárce (tj. desetinná čísla). 
