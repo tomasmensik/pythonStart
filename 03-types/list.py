@@ -291,7 +291,7 @@ unique = list(set(ascii))
 print(unique)
 # e) Zkraťte délku seznamu ascii podle délky seznamu hundreds. Zkombinujte oba seznamy do proměnné combine tak,
 # aby vznikl seznam n-tic (list of tuples) v podobě (cislo, znak).
-combine = tuple(zip(ascii[0:len(numbers)],numbers))
+combine = tuple(zip(ascii[0:len(hundreds)],hundreds))
 print(combine)
 
 from random import randint, random
