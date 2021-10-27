@@ -5,8 +5,8 @@ klíč (angl. key) a hodnotu (angl. value).
 Každému klíči je přiřazena jedna hodnota.
 '''
 
-# Collection which is unordered, changeable and indexed.
-# In Python dictionaries are written with curly brackets, and they have keys and values.
+# Kolekce, která je neseřazená, vyměnitelná a indexovaná.
+# Slovníky v pythonu jsou psány s {} závorkami - mají klíče a hodnoty.
 car = {
   'brand': 'Ford',
   'model': 'Mustang',
@@ -53,8 +53,8 @@ values = {x: x ** 2 for x in range(10)}
 print(f'values: {values}')
 
 # Unpacking operator - pro slovníky se používají **
-first = {'x': 1, 'y': 2}
-second = {'x': 10, 'z': 5}
+first = {'x': 8, 'y': 2}
+second = {'x': 30, 'z': 5}
 common = {**first, 'a': 15, **second}
 print(f'common: {common}')
 
@@ -79,6 +79,13 @@ print(f'Nested dictionary myfamily: {myfamily}')
 # a) Navrhněte vlastní vnořený slovník tvořený 3 reálnými objekty s aspoň 6 klíči tak, abyste kromě jednoduchých
 # datových typů (čísla, řetězce, boolean) ve slovníku vhodně využili i všechny v tomto bloku probrané strukturované
 # typy - tedy set, tuple a list.
+
+# myfamily[0]['sports'] = {"Football, Basketball"}
+# myfamily[0]['school'] = 'University'
+# myfamily[0]['GPA'] = 3.85
+# myfamily[0]['Girlfriend'] = True
+# print(myfamily)
+
 # Volte příklad vycházející z reality - např. slovník aut, slovník filmů, slovník historických postav atd.
 # b) Pomocí vhodných metod přidejte do slovníku nový prvek a nějaký starý naopak odstraňte
 # c) Proveďte výpis obsahu slovníku tak, aby i v konzoli vytvořil hezky naformátovanou tabulku i s mezerami

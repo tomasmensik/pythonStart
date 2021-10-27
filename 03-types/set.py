@@ -1,7 +1,7 @@
 '''
  Set je množina jedinečných hodnot
- A set is a collection which is unordered and unindexed.
- In Python sets are written with curly brackets.
+ Set je kolekce, která není seřazená a zaindexovaná.
+ Sety v pythonu jsou psány s {} závorkami.
 '''
 my_set = {2, 3, 9, 7}
 print('Množina my_set: ', my_set)
